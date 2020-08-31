@@ -36,4 +36,9 @@ router.route('/add').post(verify, (req, res) => {
 
 });
 
+router.route('/:id').delete(verivy, (req, res) => {
+    Animal.findByIdAndDelete(req.params.id)
+        .then(() => res.json('Animal berhasil dihapus.'))
+        .catch(err => res.status(400).json('Error: ' + err));
+})
 module.exports = router;
