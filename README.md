@@ -4,4 +4,4 @@
 - Auth Login dengan JWT
 - Get/Add/Update/Delete untuk user
 - Request role superadmin
-- Get dan Add request untuk animal
+- Get/Add/Delete request untuk animal
